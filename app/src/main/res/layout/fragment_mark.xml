@@ -1,0 +1,190 @@
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.your.time.app.presentation.mark.MarkFragment">
+
+        <TextView
+            android:id="@+id/time_clearing_info_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="64dp"
+            android:layout_marginEnd="8dp"
+            android:text="Очистить неразмеченное время и разметить только"
+            android:textAlignment="center"
+            android:textColor="@color/white_secondary_text"
+            android:textSize="@dimen/text_size_large"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/no_action_image" />
+
+        <Button
+            android:id="@+id/one_hour"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:text="1 час"
+            android:textSize="@dimen/text_size_small"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/two_hours"
+            app:layout_constraintTop_toBottomOf="@+id/time_clearing_info_text" />
+
+        <Button
+            android:id="@+id/two_hours"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:text="2 часа"
+            android:textSize="@dimen/text_size_small"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/one_hour"
+            app:layout_constraintEnd_toStartOf="@+id/one_hour"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/five_hours"
+            app:layout_constraintTop_toTopOf="@+id/one_hour" />
+
+        <Button
+            android:id="@+id/five_hours"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:text="5 часов"
+            android:textSize="@dimen/text_size_small"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/two_hours"
+            app:layout_constraintEnd_toStartOf="@+id/two_hours"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/twelve_hours"
+            app:layout_constraintTop_toTopOf="@+id/two_hours" />
+
+        <Button
+            android:id="@+id/twelve_hours"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:text="12 часов"
+            android:textSize="@dimen/text_size_small"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/five_hours"
+            app:layout_constraintEnd_toStartOf="@+id/five_hours"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/day"
+            app:layout_constraintTop_toTopOf="@+id/five_hours" />
+
+        <Button
+            android:id="@+id/day"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:text="Сутки"
+            android:textSize="@dimen/text_size_small"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/twelve_hours"
+            app:layout_constraintEnd_toStartOf="@+id/twelve_hours"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/twelve_hours" />
+
+        <TextView
+            android:id="@+id/unmarked_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="8dp"
+            android:textAlignment="center"
+            android:textColor="@color/white_primary_text"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/no_action_image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="1 час" />
+
+        <ImageView
+            android:id="@+id/no_action_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.384"
+            app:srcCompat="@drawable/time_interval" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/listTimePeriods"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/ok"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/ok"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/ok"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <ImageButton
+            android:id="@+id/add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/accent_rounded_rectangle"
+            android:padding="8dp"
+            android:paddingStart="16dp"
+            android:paddingLeft="16dp"
+            android:paddingEnd="16dp"
+            android:paddingRight="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/ok"
+            app:layout_constraintEnd_toStartOf="@+id/ok"
+            app:layout_constraintTop_toTopOf="@+id/ok"
+            app:srcCompat="@drawable/add_white" />
+
+        <TextView
+            android:id="@+id/remaining_unmarked_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:textColor="@color/white_secondary_text"
+            android:textSize="12sp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/add"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/add"
+            tools:text="еще осталось 15 минут" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</layout>

@@ -1,0 +1,197 @@
+<resources>
+    <string name="app_name">YourTime</string>
+
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_login">Авторизация</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="complete">Готово</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="miss_action">Пропустить</string>
+    <string name="do_not_mark_action">Не размечать</string>
+    <string name="action">Действие</string>
+
+    <string name="time_minuts">%1$d минут</string>
+    <string name="minutes">минут</string>
+    <string name="close">Закрыть</string>
+    <string name="max_value">максимум %1$d минут</string>
+    <string name="authorization">Авторизация</string>
+    <string name="ok">OK</string>
+
+    <plurals name="minutes">
+        <item quantity="zero">минут</item>
+        <item quantity="one">минута</item>
+        <item quantity="two">минуты</item>
+        <item quantity="few">минуты</item>
+        <item quantity="many">минут</item>
+        <item quantity="other">минут</item>
+    </plurals>
+
+    <plurals name="hours">
+        <item quantity="zero">часов</item>
+        <item quantity="one">час</item>
+        <item quantity="two">часа</item>
+        <item quantity="few">часа</item>
+        <item quantity="many">часов</item>
+        <item quantity="other">часов</item>
+    </plurals>
+
+    <plurals name="days">
+        <item quantity="zero">дней</item>
+        <item quantity="one">день</item>
+        <item quantity="two">дня</item>
+        <item quantity="few">дней</item>
+        <item quantity="many">дней</item>
+        <item quantity="other">дней</item>
+    </plurals>
+
+    <string-array name="time_info">
+        <item>Не пожалейте немного времени, чтобы проследить, как именно вы распоряжаетесь им. Очень важно сразу определить сферы, которые являются абсолютно бесперспективными, и те, в которые стоит «вкладывать» энергию. Это поможет правильно расставить приоритеты.</item>
+        <item>Не обманывайтесь эффективностью. Вы можете эффективно выполнять задачу, которая не является на данный момент приоритетной. В этом случае, нельзя сказать, что вы используете свое время эффективно.</item>
+        <item>Не перегружайте себя количеством задач. Если у вас есть неотложные дела и важные задачи, которые займут все ваше время, то второстепенные задачи можно отложить на более благоприятное время.</item>
+        <item>Оцените себя в плане наличия вредных привычек. Они отнимают ваше время. Составьте список таких привычек и по очереди избавляйтесь от них. Эффективнее всего получается замещение вредной привычки – полезной.</item>
+    </string-array>
+
+    <string-array name="is_more_then_duration">
+        <item>Больше чем:</item>
+        <item>Менше чем:</item>
+    </string-array>
+
+    <string-array name="notify_time">
+        <item>15 минут</item>
+        <item>30 минут</item>
+        <item>1 час</item>
+        <item>2 часа</item>
+        <item>3 часа</item>
+        <item>4 часа</item>
+        <item>5 часов</item>
+        <item>12 часов</item>
+        <item>24 часа</item>
+    </string-array>
+
+    <string-array name="activity_stats_tabs">
+        <item>@string/yesterday</item>
+        <item>@string/today</item>
+        <item>@string/_7_days</item>
+        <item>@string/_30_days</item>
+    </string-array>
+
+    <string-array name="usefulness_stats_tabs">
+        <item>@string/_7_days</item>
+        <item>@string/_30_days</item>
+    </string-array>
+
+    <string name="title_activity_uploading_actions">UploadingActionsActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="minutes_reduction">мин</string>
+    <string name="hours_reduction">час</string>
+    <string name="unmarked_action">Не размечено</string>
+    <string name="login">Войти</string>
+    <string name="registration">Зарегистрироваться</string>
+    <string name="password">Пароль</string>
+    <string name="e_mail">E-Mail</string>
+
+    <string name="incorect_e_mail">Некорректный E-Mail</string>
+    <string name="too_short_e_mail">Слишком короткий E-Mail %1$d/%2$d</string>
+    <string name="too_short_password">Слишком короткий пароль %1$d/%2$d</string>
+    <string name="correct_email">E-Mail корректный</string>
+    <string name="correct_password">Пароль корректный</string>
+    <string name="incorrect_email">E-Mail некорректный</string>
+    <string name="weak_password">Слабый пароль</string>
+    <string name="normal_password">Не сложный пароль</string>
+    <string name="strong_password">Сложный пароль</string>
+    <string name="very_strong_password">Очень сложный пароль</string>
+    <string name="loading_and_dots">Загрузка…</string>
+    <string name="loading">Загрузка</string>
+    <string name="slogan">Контролируй каждую минуту. \nНе теряй время на пустяки. \nЖиви полной жизнью.</string>
+    <string name="logo">Логотип</string>
+    <string name="login_caps">ВОЙТИ</string>
+    <string name="is_new_user">Первый раз в приложении?</string>
+    <string name="authorization_caps">АВТОРИЗАЦИЯ</string>
+    <string name="ok_caps">OK</string>
+    <string name="error">Ошибка</string>
+    <string name="logout">Выйти</string>
+    <string name="settings">Настройки</string>
+    <string name="stats">Статистика</string>
+    <string name="main">Главная</string>
+    <string name="Tasks">Задачи</string>
+    <string name="habits">Привычки</string>
+    <string name="task_adding">Новая задача</string>
+    <string name="addind_habit">Создание привычки</string>
+    <string name="time_conflict">Конфликт времени</string>
+
+    <string name="channel_name">CLife notifications</string>
+    <string name="title_marking_notification">Время пришло!</string>
+    <string name="text_marking_notification">У тебя есть %1$s неразмеченного времени, пришло время его разметить.</string>
+    <string name="today">Сегодня</string>
+    <string name="yesterday">Вчера</string>
+    <string name="_7_days">7 дней</string>
+    <string name="_30_days">30 дней</string>
+    <string name="_00_00">00:00</string>
+    <string name="_06_00">06:00</string>
+    <string name="_12_00">12:00</string>
+    <string name="_18_00">18:00</string>
+    <string name="what_did_you_do">Чем занимались?</string>
+    <string name="creating_tag">Создание тега</string>
+    <string name="_useful">Полезно</string>
+    <string name="neutral">Нейтрально</string>
+    <string name="harmful">Вредно</string>
+    <string name="cancel">Отмена</string>
+    <string name="denomination">Название</string>
+    <string name="add">Добавить</string>
+    <string name="very_harmful">Очень вредно</string>
+    <string name="very_useful">Очень полезно</string>
+    <string name="short_very_harmful">Оч. вредно</string>
+    <string name="short_very_useful">Оч. полезно</string>
+    <string name="editing_tag">Редактирование</string>
+    <string name="work">работа</string>
+    <string name="study">учеба</string>
+    <string name="sleep">сон</string>
+    <string name="food">еда</string>
+    <string name="sport">спорт</string>
+    <string name="entertaintment">развлечения</string>
+    <string name="communication">общение</string>
+    <string name="shopping">покупки</string>
+    <string name="reading">чтение</string>
+    <string name="creativity">творчество</string>
+    <string name="work_at_home">работа по дому</string>
+    <string name="movies">фильмы</string>
+    <string name="social_network">социальные сети</string>
+    <string name="transport">транспорт</string>
+    <string name="walking">прогулка</string>
+    <string name="internet">интернет</string>
+    <string name="games">игры</string>
+    <string name="pets">домашние животные</string>
+    <string name="facebook">Facebook</string>
+    <string name="instagram">Instagram</string>
+    <string name="childred">ребенок</string>
+    <string name="report">отчет</string>
+    <string name="hygiene">гигиена</string>
+    <string name="self_care">уход за собой</string>
+    <string name="nothing">ничего</string>
+    <string name="stats_activity">Статистика активности</string>
+    <string name="stats_usefulness">Статистика полезности</string>
+    <string name="create">Создать</string>
+    <string name="search_result_is_empty">Не удалось найти Тег с таким названием…</string>
+    <string name="cleared">очищено</string>
+    <string name="remaining_time">Еще %1$s</string>
+
+</resources>

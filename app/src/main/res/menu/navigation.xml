@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_stats"
+        android:icon="@drawable/chart_black"
+        android:title="@string/stats" />
+
+    <!--<item-->
+        <!--android:id="@+id/navigation_habits"-->
+        <!--android:icon="@drawable/habits_black"-->
+        <!--android:title="@string/habits" />-->
+
+    <!--<item-->
+        <!--android:id="@+id/navigation_goals"-->
+        <!--android:icon="@drawable/goals_black"-->
+        <!--android:title="@string/Tasks" />-->
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/home_black"
+        android:title="@string/main" />
+
+</menu>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="@dimen/action_icon_size"
+        android:layout_height="@dimen/action_icon_size"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical"
+        android:contentDescription="@string/action"
+        app:srcCompat="@drawable/notifications_black_24dp" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginEnd="7dp"/>
+
+</merge>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "667598006213",
+    "firebase_url": "https://yourtime-a0e66.firebaseio.com",
+    "project_id": "yourtime-a0e66",
+    "storage_bucket": "yourtime-a0e66.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:667598006213:android:2587c847e0cef8f9",
+        "android_client_info": {
+          "package_name": "com.your.time.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "667598006213-snk1pg2v5id86sstd0jp0867g9i54ma7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEg3HTcZ2yH0W9FR1GSBqgNaSB0GonONQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
